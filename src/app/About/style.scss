@@ -54,6 +54,10 @@
         font-size: 42px;
         font-weight: 600;
     }
+    hr{
+      border:none;
+      border-right:1px solid rgb(193, 193, 193);
+    }
   }
   .chooseWrapper {
     display: flex;
