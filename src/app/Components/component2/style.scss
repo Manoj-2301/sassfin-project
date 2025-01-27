@@ -1,6 +1,7 @@
 .Box{
     max-width: 1210px;
     margin: 0 auto;
+    flex-wrap: wrap;
     .ChooseBox {
         display: flex;
         justify-content: flex-start;
