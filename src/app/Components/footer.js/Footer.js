@@ -37,6 +37,51 @@ const Footer = () => {
             </div>
           </div>
         </div>
+        <div className="middle_footer">
+          <div className="first_side ">
+            <div>
+              <p>Finlab</p>
+              <p>Our platform i deisgned to you do business</p>
+            </div>
+            <div>
+              <p>i</p>
+              <p>e</p>
+              <p>w</p>
+              <p>y</p>
+            </div>
+          </div>
+          <div className="second_side">
+            <div>
+              <p>Pages</p>
+              <div>
+                <p>Home</p>
+                <p>About</p>
+                <p>Feature</p>
+                <p>Career</p>
+                <p>Blog</p>
+              </div>
+            </div>
+            <div>
+              <p>Pages</p>
+              <div>
+                <p>integration</p>
+                <p>Pricing</p>
+                <p>Contact</p>
+                <p>FAQs</p>
+              </div>
+            </div>
+            <div>
+              <p>Utility pages</p>
+              <div>
+                <p>Style Guide</p>
+                <p>License</p>
+                <p>Pass Protected</p>
+                <p>Change log</p>
+                <p>404</p>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   );
