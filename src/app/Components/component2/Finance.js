@@ -24,7 +24,7 @@ const Finance = () => {
     <div className="Box">
       <div className="ChooseBox">
         {Img.map((img) => (
-          <div>
+          <div className="cb">
             <div className="ChooseImg">
               <Image
                 src={img.image}

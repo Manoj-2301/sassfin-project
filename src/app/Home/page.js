@@ -63,7 +63,7 @@ const page = () => {
         </div>
         <hr />
       </div>
-      <div>
+      <div className="">
         <div className="chooseWrapper">
           <div className="chooseTitle">
             <p>Why Choose Us</p>
