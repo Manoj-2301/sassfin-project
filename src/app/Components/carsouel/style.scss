@@ -1,0 +1,49 @@
+.animator{
+    display: flex;
+    flex-direction: column;
+    gap:30px;
+    .animation {
+        margin-right: auto;
+        margin-left: auto;
+        display: flex;
+        gap: 25px;
+        .imgBox {
+          padding: 25px;
+          background-color: white;
+          border: 2px solid lightgrey;
+          animation: left 10s linear infinite;
+
+        }
+       @keyframes left {
+          from{
+              transform: translateX(1000px);
+          }
+          to{
+              transform: translateX(-1000px);
+          }
+       }
+       }
+
+      //2nd box
+
+
+        .imgBox2 {
+            padding: 25px;
+            background-color: white;
+            border: 2px solid lightgrey;
+            animation: right 10s linear infinite ;
+            transform: translateX(1000px);
+
+          }
+         @keyframes right {
+            from{
+                transform: translateX(-1000px);
+            }
+            to{
+                transform: translateX(1000px);
+            }
+         }
+
+
+
+}
