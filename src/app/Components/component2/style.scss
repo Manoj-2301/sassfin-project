@@ -1,39 +1,38 @@
-.Box{
-    max-width: 1210px;
-    margin: 0 auto;
-padding: 10px;
-    .ChooseBox {
-        display: grid;
-        grid-template-columns: auto auto auto;
-        gap: 50px;
-        padding: 10px 5px;
-        width: 378px;
-       .ChooseImg {
-          padding: 25px 20px;
-          background-color: #ffffff;
-          border-radius: 10px;
-          max-width: max-content;
-          transition: transform 0.3s ease-in-out;
-          .img:hover {
-            transform: scale(1.05);
-          transition: transform 0.3s ease-in-out;
-
-          }
-        }
-        .ChoosePara {
-          width: 378px;
-          .auto {
-            font-size: 20px;
-            font-weight: 700;
-            line-height: 30px;
-            margin-bottom: 15px;
-          }
-          .ChooseSub {
-            font-size: 20px;
-            font-weight: 500;
-            line-height: 30px;
-            color: #555555;
-          }
-        }
+.Box {
+  max-width: 1210px;
+  margin: 0 auto;
+  padding: 10px;
+  .ChooseBox {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 50px;
+    padding: 10px 5px;
+    width: 378px;
+    .ChooseImg {
+      padding: 25px 20px;
+      background-color: #ffffff;
+      border-radius: 10px;
+      max-width: max-content;
+      transition: transform 0.3s ease-in-out;
+      .img:hover {
+        transform: scale(1.05);
+        transition: transform 0.3s ease-in-out;
       }
+    }
+    .ChoosePara {
+      width: 378px;
+      .auto {
+        font-size: 20px;
+        font-weight: 700;
+        line-height: 30px;
+        margin-bottom: 15px;
+      }
+      .ChooseSub {
+        font-size: 20px;
+        font-weight: 500;
+        line-height: 30px;
+        color: #555555;
+      }
+    }
+  }
 }
