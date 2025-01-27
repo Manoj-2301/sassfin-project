@@ -53,7 +53,7 @@ const Footer = () => {
           <div className="second_side">
             <div>
               <p>Pages</p>
-              <div>
+              <div className="footer_sub">
                 <p>Home</p>
                 <p>About</p>
                 <p>Feature</p>
@@ -63,7 +63,7 @@ const Footer = () => {
             </div>
             <div>
               <p>Pages</p>
-              <div>
+              <div className="footer_sub">
                 <p>integration</p>
                 <p>Pricing</p>
                 <p>Contact</p>
@@ -72,7 +72,7 @@ const Footer = () => {
             </div>
             <div>
               <p>Utility pages</p>
-              <div>
+              <div className="footer_sub">
                 <p>Style Guide</p>
                 <p>License</p>
                 <p>Pass Protected</p>
