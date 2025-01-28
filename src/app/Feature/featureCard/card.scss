@@ -1,0 +1,48 @@
+.feature-card {
+  height: 1114.31px;
+  width: 1240px;
+  padding: 20px 20px 20px 20px;
+  max-width: 1400px;
+  margin: 0 auto;
+  background-color: #e9f3f8;
+  border-radius: 25px;
+  .feature_card1 {
+    display: flex;
+    gap: 5%;
+    height: auto;
+    background-color: white;
+    border-radius: 25px;
+    padding: 30px;
+    .feature_para {
+      font-size: 40px;
+      line-height: 50px;
+      font-weight: 600;
+      margin-bottom: 25px;
+    }
+    .feature_sub_para {
+      font-size: 20px;
+      font-weight: 500;
+      margin-bottom: 25px;
+      line-height: 30px;
+      color: #555;
+    }
+    .feature_img {
+      width: 550px;
+      aspect-ratio: 1.8;
+      position: relative;
+    }
+  }
+  .feature_card2 {
+    height: auto;
+    background-color: white;
+    border-radius: 25px;
+    padding: 30px;
+    margin-top: 25px;
+    max-width: fit-content;
+    .feature_img {
+      position: relative;
+      aspect-ratio: 1.2;
+      width: 550px;
+    }
+  }
+}

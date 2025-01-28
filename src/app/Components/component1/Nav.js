@@ -31,22 +31,24 @@ const Nav = () => {
   return (
     <div className="navBrand">
       <div className="nav">
-        <div className="logo">
-          <Link href="/">
-            <p>Finlab.</p>
-          </Link>
-        </div>
-        <div className="nav_item">
-          {nav.map((nav) => (
-            <div>
-              <Link href={nav.path} className="navItem">
-                <p>
-                  {nav.name}
-                  <span>{nav.icon}</span>
-                </p>
-              </Link>
-            </div>
-          ))}
+        <div className="nav__item">
+          <div className="logo">
+            <Link href="/">
+              <p>Finlab.</p>
+            </Link>
+          </div>
+          <div className="nav_item">
+            {nav.map((nav) => (
+              <div>
+                <Link href={nav.path} className="navItem">
+                  <p>
+                    {nav.name}
+                    <span>{nav.icon}</span>
+                  </p>
+                </Link>
+              </div>
+            ))}
+          </div>
         </div>
         <div className="Cart">
           <div>
@@ -55,7 +57,6 @@ const Nav = () => {
           <Button text="Get Started" />
         </div>
       </div>
-      <div></div>
     </div>
   );
 };

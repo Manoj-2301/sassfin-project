@@ -2,6 +2,9 @@ import React from "react";
 import Image from "next/image";
 import AboutCard from '../Components/card/AboutCard';
 import "./style.scss";
+import Empower from "./Empower/empowering";
+import EmpowerCard from './empCard/empowerCard';
+import PEOPLE from './people/people'
 
 const page = () => {
   return (
@@ -27,6 +30,7 @@ const page = () => {
                 className="img"
                 src="/about-image.jpg"
                 fill
+                // layout="responsive"
                 sizes="100vw"
               />
             </div>
@@ -57,7 +61,7 @@ const page = () => {
       </div>
       {/* middle second */}
       <div>
-        <div className="chooseWrapper">
+        <div className="about_wrapper">
           <div className="chooseTitle">
             <p>ABOUT US</p>
             <span>What sets us apart?</span>
@@ -72,6 +76,10 @@ const page = () => {
         </div>
         <AboutCard/>
       </div>
+      {/* third sec */}
+      <Empower/>
+      <EmpowerCard/>
+      <PEOPLE/>
     </div>
   );
 };

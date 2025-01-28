@@ -1,9 +1,12 @@
 import React from 'react';
+import Feature from './featureMain/feature';
+import FeatureCard from './featureCard/featureCard';
 
 const page = () => {
   return (
     <div>
-        this is feature
+        <Feature/>
+        <FeatureCard/>
     </div>
   );
 }

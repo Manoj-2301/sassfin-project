@@ -1,0 +1,48 @@
+  .people_page {
+    margin-top: 100px;
+    .people_para {
+      text-align: center;
+      letter-spacing: -2px;
+      font-size: 60px;
+      font-weight: 600;
+      line-height: 110%;
+      margin-bottom: 25px;
+    }
+    .people_sub {
+      text-align: center;
+      font-size: 18px;
+      margin-bottom: 60px;
+      color:#555555;
+    }
+  }
+  .people{
+    display:flex;
+    justify-content: flex-start;
+    gap:5%;
+    flex-wrap:wrap;
+    max-width: 1400px;
+    margin:0 auto;
+    margin-bottom: 50px;
+    margin-left: 50px;
+  }
+  .people_card {
+    width: 400px;
+  .people_img {
+    width: 400px;
+    aspect-ratio: 0.9;
+    position: relative;
+    img{
+        border-radius:10px;
+    }
+  }
+  .people_name {
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    font-size: 25px;
+  }
+  .people_desgi{
+    text-align: center;
+    color:#6a6a6a;
+  }
+}

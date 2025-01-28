@@ -14,28 +14,33 @@
     margin: 0 auto;
     gap: 25px;
     padding: 34px 60px 0px 35px;
-    .logo {
-      font-size: 24px;
-      font-weight: 700;
-      letter-spacing: 0.003rem;
-      margin-left: 15px;
-    }
-    .nav_item {
+    .nav__item{
       display: flex;
-      justify-content: flex-start;
-      align-items: center;
-      text-align: center;
-      gap: 25px;
-      margin-left: -435px;
-      font-size: 16px;
-      font-weight: 500;
-      .navItem {
-        p,
-        span {
-          display: flex;
-          justify-content: flex-start;
-          align-items: center;
-          gap: 10px;
+      gap:150px;
+
+      .logo {
+        font-size: 24px;
+        font-weight: 700;
+        letter-spacing: 0.003rem;
+        margin-left: 15px;
+      }
+      .nav_item {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        text-align: center;
+        gap: 25px;
+        // margin-left: -435px;
+        font-size: 16px;
+        font-weight: 500;
+        .navItem {
+          p,
+          span {
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            gap: 10px;
+          }
         }
       }
     }
@@ -51,14 +56,14 @@
   }
 }
 
-@media  (max-width: 1024px) {
+@media  (max-width:915px) {
   .navBrand {
       .nav {
     .logo {
       font-size: 22px;
     }
     .nav_item {
-      margin-left: -180px;
+      margin-left: -1px;
       font-size: 15px;
       font-weight: 500;
       .navItem {

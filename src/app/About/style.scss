@@ -23,11 +23,12 @@
     height: 679.987px;
     width: 1519.2px;
     padding: 60px 0 40px 0;
+    max-width: 1200px;
+    margin: 0 auto;
     .about__img {
-      margin: 0 auto;
-      height: 579.987px;
+      aspect-ratio: 2.1;
       width: 1240px;
-      max-width: 100%;
+      max-width: 1200px;
       border-radius: 25px;
       position: relative;
       .img {
@@ -37,29 +38,31 @@
   }
   .experience {
     display: flex;
-    justify-content: space-around;
-    gap: 100px;
+    justify-content: center;
+    // flex-wrap: wrap;
+    gap: 10%;
     max-width: 1270px;
-    margin-left: auto;
-    margin-right: auto;
+    margin: 0 auto;
     padding-left: 15px;
     padding-right: 15px;
     margin-top: 50px;
     margin-bottom: 90px;
-    .expe_num{
-        color: black;
-        letter-spacing: -1px;
-        margin-top: 0;
-        margin-bottom: 10px;
-        font-size: 42px;
-        font-weight: 600;
+    .expe_num {
+      // flex-wrap: wrap;
+      color: black;
+      letter-spacing: -1px;
+      margin-top: 0;
+      margin-bottom: 10px;
+      font-size: 42px;
+      font-weight: 600;
     }
-    hr{
-      border:none;
-      border-right:1px solid rgb(193, 193, 193);
+    hr {
+      border: none;
+
+      border-right: 1px solid rgb(193, 193, 193);
     }
   }
-  .chooseWrapper {
+  .about_wrapper {
     display: flex;
     max-width: 1400px;
     margin: 0 auto;
@@ -82,12 +85,73 @@
         margin-top: 50px;
       }
     }
-
-}
-.chooseDescription {
+  }
+  .chooseDescription {
     font-size: 18px;
     font-weight: 500;
     color: #555555;
     line-height: 28px;
+  }
+}
+
+@media only screen and (max-width: 915px) {
+  .About {
+    margin-top: 192px;
+    margin-bottom: 25px;
+    .about_para {
+      letter-spacing: -2px;
+      font-size: 60px;
+      font-weight: 600;
+      line-height: 110%;
+      margin-bottom: 50px;
+    }
+    .about_sub {
+      font-size: 18px;
+    }
+    .about_img {
+      max-width: 915px;
+      .about__img {
+        max-width: 915px;
+        margin: 0 auto;
+        height: 550px;
+        width: 890px;
+        .img {
+          object-fit: cover;
+        }
+      }
+    }
+    .experience {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      max-width: 915px;
+      margin: 0 auto;
+      .expe_num {
+      }
+      hr {
+      }
+    }
+    .about_wrapper {
+      // display: grid;
+      // grid-template-columns: auto;
+      max-width: 915px;
+      flex-direction: row;
+      .chooseTitle {
+        font-size: 18px;
+        line-height: 46px;
+        font-weight: 600;
+        color: #6481f1;
+        span {
+          color: #050505;
+          font-size: 40px;
+          line-height: 62.4px;
+          letter-spacing: -1px;
+          font-weight: 600;
+          margin-top: 50px;
+        }
+      }
+    }
+    .chooseDescription {
+      font-size:16px ;
+    }
   }
 }

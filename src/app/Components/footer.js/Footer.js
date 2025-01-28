@@ -4,7 +4,7 @@ import Button from "../button/Button";
 
 const Footer = () => {
   return (
-    <div>
+    <div className="foot">
       <div className="footer_bg">
         <div className="footer_inner_bg">
           <div>

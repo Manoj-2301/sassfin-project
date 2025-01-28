@@ -1,20 +1,21 @@
 .About_card {
   max-width: 1210px;
   margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+
   .ChooseBox {
-    display: flex;
-    justify-content: flex-start;
+    display: grid;
+    grid-template-columns: auto auto auto;
     align-items: flex-start;
-    flex-wrap: nowrap;
     gap: 50px;
     padding: 10px 5px;
     width: 378px;
-
     .ChoosePara {
       width: 378px;
       border: 1px solid lightgrey;
-        padding:30px 25px;
-        border-radius: 10px;
+      padding: 30px 25px;
+      border-radius: 10px;
       .auto {
         font-size: 24px;
         font-weight: 700;
@@ -26,6 +27,37 @@
         font-weight: 500;
         line-height: 30px;
         color: #555555;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 915px) {
+  .About_card {
+    max-width: 915px;
+    margin: 0 auto;
+
+    .ChooseBox {
+      display: grid;
+      grid-template-columns: auto auto;
+      margin-left: 50px;
+      .ChoosePara {
+        width: 378px;
+        border: 1px solid lightgrey;
+        padding: 30px 25px;
+        border-radius: 10px;
+        .auto {
+          font-size: 22px;
+          font-weight: 700;
+          line-height: 30px;
+          margin-bottom: 15px;
+        }
+        .ChooseSub {
+          font-size: 16px;
+          font-weight: 500;
+          line-height: 30px;
+          color: #555555;
+        }
       }
     }
   }
