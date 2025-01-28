@@ -19,7 +19,7 @@ const Nav = () => {
       path: "/Feature",
     },
     {
-      name: "Pages ",
+      name: "Contact ",
       icon: <IoChevronDownOutline />,
       path: "/Contact",
     },

@@ -1,6 +1,8 @@
 import React from "react";
 import "./footerStyle.scss";
 import Button from "../button/Button";
+import { FaInstagram , FaXTwitter,FaSquareBehance} from "react-icons/fa6";
+
 
 const Footer = () => {
   return (
@@ -40,19 +42,20 @@ const Footer = () => {
         <div className="middle_footer">
           <div className="first_side ">
             <div>
-              <p>Finlab</p>
-              <p>Our platform i deisgned to you do business</p>
+              <p className="logofooter">Finlab.</p>
+              <p className="logoSub">Our platform i deisgned to you do business</p>
             </div>
-            <div>
-              <p>i</p>
-              <p>e</p>
-              <p>w</p>
-              <p>y</p>
+            <div className="icon">
+            <FaInstagram />
+            <FaXTwitter />
+            <FaSquareBehance />
+
+
             </div>
           </div>
           <div className="second_side">
             <div>
-              <p>Pages</p>
+              <p className="footerP">Pages</p>
               <div className="footer_sub">
                 <p>Home</p>
                 <p>About</p>
@@ -62,7 +65,7 @@ const Footer = () => {
               </div>
             </div>
             <div>
-              <p>Pages</p>
+              <p className="footerP">Pages</p>
               <div className="footer_sub">
                 <p>integration</p>
                 <p>Pricing</p>
@@ -71,7 +74,7 @@ const Footer = () => {
               </div>
             </div>
             <div>
-              <p>Utility pages</p>
+              <p className="footerP">Utility pages</p>
               <div className="footer_sub">
                 <p>Style Guide</p>
                 <p>License</p>
@@ -81,6 +84,10 @@ const Footer = () => {
               </div>
             </div>
           </div>
+        </div>
+        <hr/>
+        <div className="copy">
+          <p>© Copyright 2024 | Design & Developed By <span>Onixtheme - License</span> | Powered By Webflow</p>
         </div>
       </div>
     </div>

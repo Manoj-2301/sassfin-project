@@ -4,8 +4,6 @@ import Finance from "../Components/component2/Finance";
 import Image from "next/image";
 import { FaPlay } from "react-icons/fa";
 import { TiTick } from "react-icons/ti";
-import { FaChevronCircleRight } from "react-icons/fa";
-import { LuRocket } from "react-icons/lu";
 import Cards from '../Components/component3/card'
 import "./style.scss";
 import Price from "../Components/priceComponent/Price";

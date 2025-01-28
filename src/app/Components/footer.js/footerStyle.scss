@@ -7,7 +7,7 @@
   width: 100%;
   padding: 50px 0 30px 0;
   .footer_inner_bg {
-    // height: 546.6px;
+
     aspect-ratio: 2.3;
     max-width: 1360px;
     margin: 0 auto;
@@ -37,6 +37,7 @@
       font-size: 18px;
       font-weight: 400;
       line-height: 27px;
+      margin-top:50px;
       .track {
         margin-bottom: 25px;
         color: white;
@@ -50,12 +51,51 @@
     width: auto;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: flex-start;
+    gap: 25rem;
     margin-top: 60px;
+    .first_side{
+      .logofooter{
+font-size: 32px;
+margin-bottom:25px;
+      }
+      .logoSub{
+font-size: 18px;
+letter-spacing: 1px;
+margin-bottom:25px;
+      }
+      .icon{
+        font-size: 18px;
+display:flex;
+gap:15px;
+      }
+    }
     .second_side{
       display: flex;
       flex-wrap: wrap;
       gap: 60px;
+.footerP{
+  font-size: 20px;
+}
+      .footer_sub{
+        margin-top: 25px;
+        color:#555;
+        display: flex;
+        flex-direction: column;
+        gap:15px;
+      }
+    }
+  }
+  hr{
+    margin-top:100px;
+    margin-bottom:40px;
+  }
+  .copy{
+    color:#555;
+    text-align: center;
+    font-size:20px;
+    span{
+      color:white;
     }
   }
 }
