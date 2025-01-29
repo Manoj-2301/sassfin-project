@@ -1,10 +1,14 @@
 .navBrand {
-    height:123px;
-    position: fixed;
-    left: 0;
-    right: 0;
-    z-index: 999;
-    background-color:white;
+  height: 123px;
+  position: fixed;
+  left: 0;
+  right: 0;
+  z-index: 999;
+  transition: background-color 0.3s ease;
+
+  &.scrolled {
+    background-color: rgb(255, 255, 255); // Adjust color as needed
+  }
 
   .nav {
     display: flex;
@@ -14,9 +18,10 @@
     margin: 0 auto;
     gap: 25px;
     padding: 34px 60px 0px 35px;
-    .nav__item{
+
+    .nav__item {
       display: flex;
-      gap:150px;
+      gap: 150px;
 
       .logo {
         font-size: 24px;
@@ -24,15 +29,14 @@
         letter-spacing: 0.003rem;
         margin-left: 15px;
       }
+
       .nav_item {
         display: flex;
         justify-content: flex-start;
         align-items: center;
         text-align: center;
         gap: 25px;
-        // margin-left: -435px;
-        font-size: 16px;
-        font-weight: 500;
+
         .navItem {
           p,
           span {
@@ -44,11 +48,13 @@
         }
       }
     }
+
     .Cart {
       display: flex;
       justify-content: flex-end;
       align-items: center;
       gap: 30px;
+
       .bagIcon {
         font-size: 24px;
       }
@@ -56,36 +62,88 @@
   }
 }
 
-@media  (max-width:915px) {
+/* Media Queries */
+
+/* For devices with a max-width of 915px */
+@media (max-width: 915px) {
   .navBrand {
-      .nav {
-    .logo {
-      font-size: 22px;
+    .nav {
+      .logo {
+        font-size: 22px;
+      }
+
+      .nav_item {
+        gap: 15px;
+        font-size: 15px;
+      }
+
+      .Cart {
+        gap: 20px;
+      }
     }
-    .nav_item {
-      margin-left: -1px;
-      font-size: 15px;
-      font-weight: 500;
-      .navItem {
-        p,
-        span {
-          display: flex;
-          justify-content: flex-start;
-          align-items: center;
+  }
+}
+
+/* For devices with a max-width of 768px */
+@media (max-width: 768px) {
+  .navBrand {
+    .nav {
+      flex-direction: row;
+      padding: 20px 30px;
+
+      .nav__item {
+        flex-direction: row;
+        gap: 20px;
+
+        .nav_item {
+          flex-wrap: wrap;
           gap: 10px;
         }
       }
-    }
-    .Cart {
-      display: flex;
-      justify-content: flex-end;
-      align-items: center;
-      gap: 30px;
-      .bagIcon {
-        font-size: 24px;
+
+      .Cart {
+        justify-content: center;
+        gap: 15px;
+
+        .bagIcon {
+          font-size: 20px;
+        }
       }
     }
   }
 }
 
+/* For devices with a max-width of 360px */
+@media (max-width: 360px) {
+  .navBrand {
+    height: auto;
+
+    .nav {
+      padding: 15px;
+      gap: 10px;
+
+      .logo {
+        font-size: 18px;
+      }
+
+      .nav__item {
+        flex-direction: column;
+        gap: 15px;
+
+        .nav_item {
+          font-size: 14px;
+          gap: 8px;
+          display:none;
+        }
+      }
+
+      .Cart {
+        gap: 10px;
+
+        .bagIcon {
+          font-size: 18px;
+        }
+      }
+    }
+  }
 }

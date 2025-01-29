@@ -1,49 +1,47 @@
-.animator{
-    display: flex;
-    flex-direction: column;
-    gap:30px;
-    .animation {
-        margin-right: auto;
-        margin-left: auto;
-        display: flex;
-        gap: 25px;
-        .imgBox {
-          padding: 25px;
-          background-color: white;
-          border: 2px solid lightgrey;
-          animation: left 10s linear infinite;
+.animator {
+  margin-bottom: 100px;
+}
+.animation {
+  margin-top: 25px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 25px;
+  animation: right 6s ease-in-out infinite;
+  transform: translateX(10px);
+  .ani1 {
+    border: 1px solid rgb(229, 229, 229);
+    position: relative;
+    padding: 20px 40px;
+    border-radius: 10px;
+  }
+}
+@keyframes right {
+  from {
+    transform: translateX(-900px);
+  }
+  to {
+    transform: translateX(900px);
+  }
+}
 
-        }
-       @keyframes left {
-          from{
-              transform: translateX(1000px);
-          }
-          to{
-              transform: translateX(-1000px);
-          }
-       }
-       }
-
-      //2nd box
-
-
-        .imgBox2 {
-            padding: 25px;
-            background-color: white;
-            border: 2px solid lightgrey;
-            animation: right 10s linear infinite ;
-            transform: translateX(1000px);
-
-          }
-         @keyframes right {
-            from{
-                transform: translateX(-1000px);
-            }
-            to{
-                transform: translateX(1000px);
-            }
-         }
-
-
-
+.animation2 {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 25px;
+  animation: left 6s ease-in-out infinite;
+  transform: translateX(10px);
+  .ani1 {
+    border: 1px solid rgb(229, 229, 229);
+    position: relative;
+    padding: 20px 40px;
+    border-radius: 10px;
+  }
+}
+@keyframes left {
+  from {
+    transform: translateX(900px);
+  }
+  to {
+    transform: translateX(-900px);
+  }
 }
